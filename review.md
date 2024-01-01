@@ -353,7 +353,7 @@ $\overline{I_n^2} = 4kT \gamma g_m$ <br>
 ### 闪烁噪声
 来源：硅和二氧化硅界面的悬挂键对载流子俘获和释放，放出能量，就像在“闪烁”一样 <br>
 $\overline{V_n^2} = \frac{K}{C_{ox}WLf}$ <br>
-闪烁噪声不容易预测。
+闪烁噪声不容易预测。低频下闪烁噪声更大。增加面积可以减小闪烁噪声
 
 埋沟输运器件（如PMOS）可以减小输入噪声。因为吸硼吐磷现象让PMOS导电沟道在距离界面一定距离的地方，避免了界面态的影响。 <br>
 
@@ -370,8 +370,14 @@ $\overline{V_n^2} = \frac{K}{C_{ox}WLf}$ <br>
 1. 将输入开路，用输入参考电流噪声用阻抗转换成加在栅上的电压后，在通过放大转换成输出噪声，输出噪声可以直接求出
 1. 通过输出噪声求输入参考电流噪声 
 
+## 折中
+降低热噪声可以通过增大 $g_m$ 即增加漏电流或栅宽，或增大Rd；但是输出电压摆幅减小，功耗增加，速度降低 <br>
+降低闪烁噪声可以增加栅面积同时保持W/L不变，但是减低速度，增加功耗 <br>
 
-
+## 其他
+共栅级的负载产生的噪声电流会反映到输入。 <br>
+源跟随器将噪声叠加到输入信号，低噪声放大器应避免使用源跟随器。<br>
+差动对噪声是共源级共源级的两倍<br>
 
 # CH8 反馈
 反馈系统四个部分<br>
@@ -381,10 +387,12 @@ $\overline{V_n^2} = \frac{K}{C_{ox}WLf}$ <br>
 1. 产生反馈误差的方式
 
 反馈电路特性 <br>
-1. 降低增益灵敏度
+1. 降低增益灵敏度，但是会减小增益
 1. 改变终端阻抗
 1. 增大带宽，但是会减小增益，增益带宽乘积不变
 1. 减小非线性
+1. 反馈并不会减小噪声，还可能会增加噪声
+
 
 ## 闭环增益
 $A_c = \frac{A}{1+\beta A}$ <br>
@@ -509,20 +517,61 @@ monotonically
 有源的 active
 超过 exceed
 
+## CH6
+氧化物 oxide<br>
+沟道 channel<br>
+传递函数 transfer function<br>
+低通滤波器 low-pass filter<br>
+截止频率 cutoff frequency<br>
+极点 pole<br>
+零点 zero<br>
+密勒近似 miller's approximation<br>
+原点 origin<br>
+主极点近似 dominant pole approximation<br>
+一阶低通电路 first-order low-pass circuit<br>
+相应端口 corresponding terminal<br>
+自举 bootstrap<br>
+有源电感 active inductor<br>
+抑制 suppress<br>
+扰动 disturbance<br>
+储能元件 storage element<br>
+时间常数 time constant<br>
+
+## CH7
+统计特性 statistical characteristic
+随机过程 random process
+波形 waveform
+功率 power
+归一化 normalize
+频谱 spectrum
+功率谱密度 power spectral density
+概率密度函数 probability denesity function
+信噪比 signal-to-noise ratio
+正弦波 sinusoid
+热噪声 thermal noise
+串联 series
+集总电阻 lumped resistance
+分布栅电阻 distributed gate resistance
+版图 layout
+悬挂键 dangling bonds
+闪烁噪声 flicker noise
+输入参考噪声 input-referred noise
+幅值 amplitude
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+## CH8
+反馈 feedback
+前馈 feedforward
+反馈误差 feedback error
+开环 open-loop
+闭环 closed-loop
+虚地 virtual ground
+增益灵敏度降低 gain desensitization
+定量的 quantified
+电容分压器 capacitive voltage divider
+不同节点 distinct node
+同一节点 single node
+环路增益 loop gain
 
 
 
