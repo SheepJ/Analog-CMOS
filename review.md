@@ -1,3 +1,37 @@
+## 
+模拟信号：时间上连续并且具有无限范围的值
+模拟IC：产生或放大模拟信号
+数字信号：离散的
+
+## 模拟IC的应用
+控制；数据转换；功率调节；通信；仪器仪表和物理世界接口；计算；
+
+## 模拟IC设计要求
+关注功耗和处理速度；它们一般矛盾。
+
+## 如何设计
+1. 设计规范
+1. 子电路设计、物理布局和仿真
+
+## 汽车芯片的五大功能
+计算、感知、执行、通信、存储
+
+
+## 汽车芯片九大类
+1. 控制
+1. 计算
+1. 功率
+1. 通信
+1. 存储
+1. 电源/模拟
+1. 驱动
+1. 传感
+1. 安全
+
+
+
+
+
 # CH2 CMOS器件基础
 
 ## KCL和KVL
@@ -412,7 +446,7 @@ $R_{out,closed} = R_{out,open} (1 + \beta A)$ <br>
 
 
 ## 带宽变化
-增益变为原来 $\frac{1}{\beta A}$ <br>
+增益变为原来 $\frac{1}{1 + \beta A}$ <br>
 带宽变为原来 $1 + \beta A$ 倍 <br>
 但是增益减小是小问题，可以通过两个放大器级联在一起增大增益；而带宽变宽带来的速度增加足以弥补缺陷 <br>
 
@@ -436,86 +470,85 @@ $R_{out,closed} = R_{out,open} (1 + \beta A)$ <br>
 # 英语词组
 
 ## CH2
-源 source
-漏 drain
-有效沟道长度 effective channel length
-三极管区 triode region
-栅电容 gate capacitance
-体区 bulk
-CMOS complementary MOS
-衬底 substrate
-过驱电压 overdrive voltage
-宽长比 aspect ratio
-饱和 saturation
-跨导 transconductance
-背栅效应 back-gate effect
-沟道长度调制系数 channel-length modulation coefficient
-耗尽区 depletion
-重叠 overlap
-边缘电场 fringing electric fields
-内建电势 built-in potential
-侧壁 sidewall
-外围 perimeter
-反型层 inversion layer
-屏蔽 shield
-积累 accumulation
-
-monotonically
+源 source<br>
+漏 drain<br>
+有效沟道长度 effective channel length<br>
+三极管区 triode region<br>
+栅电容 gate capacitance<br>
+体区 bulk<br>
+CMOS complementary MOS<br>
+衬底 substrate<br>
+过驱电压 overdrive voltage<br>
+**宽长比 aspect ratio**<br>
+饱和 saturation<br>
+跨导 transconductance<br>
+背栅效应 back-gate effect<br>
+沟道长度调制系数 channel-length modulation coefficient<br>
+耗尽区 depletion<br>
+重叠 overlap <br>
+边缘电场 fringing electric fields<br>
+内建电势 built-in potential<br>
+侧壁 sidewall<br>
+外围 perimeter<br>
+反型层 inversion layer<br>
+屏蔽 shield<br>
+积累 accumulation<br>
+单调地 monotonically<br>
 
 
 ## CH3
-电源电压 supply voltage
-电压摆幅 voltage swings
-阻抗 impedance
-导数 derivative
-亚阈区导电 subthreshold conduction
-代价 penalty
-电压余度 voltage headroom
-负反馈 degeneration
-推导 derive
-直观的 intuitive
-消除 eliminate
-迁移率 mobility
-耦合 couple
-级联 cascade
-拓扑 topology
-套筒式共源共栅 telescopic cascode
-折中 trade-off
-限制 constraint
-劣质的共源共栅 poor man's cascode
-折叠式共源共栅 folded cascode
+电源电压 supply voltage          <br>
+电压摆幅 voltage swings          <br>
+阻抗 impedance                 <br>
+导数 derivative                <br>
+亚阈区导电 subthreshold conduction<br>
+代价 penalty                <br>
+电压余度 voltage headroom     <br>
+负反馈 degeneration          <br>
+推导 derive                 <br>
+直观的 intuitive             <br>
+消除 eliminate              <br>
+迁移率 mobility              <br>
+耦合 couple                 <br>
+级联 cascade                <br>
+拓扑 topology               <br>
+套筒式共源共栅 telescopic cascode<br>
+折中 trade-off              <br>
+限制 constraint             <br>
+劣质的共源共栅 poor man's cascode<br>
+折叠式共源共栅 folded cascode <br>
 
 ## CH4
-差动对 differential pair
-共模电平 common-mode level
-峰峰值 peak-to-peak swing
-抗干扰 immunity
-差动相位 differential phases
-共模抑制 common-mode rejection
-单端电路 single-ended counterpart
-电源噪声抑制 supply noise rejection
-失真 clip
-平衡态 equilibrium
-半边电路 half-circuit
-阻性负反馈 resistive degeneration
-承担 substains
-并联 parallel
-失配 mismatch
-共模到差模转换 common-mode to differential conversion
-高频 high frequency
-寄生 parasitic
-共模抑制比 common-mode rejection ratio
-器件尺寸 device dimension
+差动对 differential pair                         <br>
+共模电平 common-mode level                        <br>
+峰峰值 peak-to-peak swing                        <br>
+抗干扰 immunity                                  <br>
+差动相位 differential phases                      <br>
+共模抑制 common-mode rejection                    <br>
+单端电路 single-ended counterpart                 <br>
+电源噪声抑制 supply noise rejection                 <br>
+失真 clip                                       <br>
+平衡态 equilibrium                               <br>
+半边电路 half-circuit                             <br>
+阻性负反馈 resistive degeneration                  <br>
+承担 substains                                  <br>
+并联 parallel                                   <br>
+失配 mismatch                                   <br>
+共模到差模转换 common-mode to differential conversion<br>
+高频 high frequency <br>
+寄生 parasitic<br>
+共模抑制比 common-mode rejection ratio<br>
+器件尺寸 device dimension<br>
 
 
 ## CH5
-电流镜 current mirrors
-基准，参考 reference
-精度 accuracy
-误差 inaccuracy
-阈值电压 threshold voltage
-有源的 active
-超过 exceed
+电流镜 current mirrors   <br>
+基准，参考 reference       <br>
+精度 accuracy           <br>
+误差 inaccuracy         <br>
+阈值电压 threshold voltage<br>
+有源的 active <br>
+超过 exceed <br>
 
 ## CH6
 氧化物 oxide<br>
@@ -538,40 +571,40 @@ monotonically
 时间常数 time constant<br>
 
 ## CH7
-统计特性 statistical characteristic
-随机过程 random process
-波形 waveform
-功率 power
-归一化 normalize
-频谱 spectrum
-功率谱密度 power spectral density
-概率密度函数 probability denesity function
-信噪比 signal-to-noise ratio
-正弦波 sinusoid
-热噪声 thermal noise
-串联 series
-集总电阻 lumped resistance
-分布栅电阻 distributed gate resistance
-版图 layout
-悬挂键 dangling bonds
-闪烁噪声 flicker noise
-输入参考噪声 input-referred noise
-幅值 amplitude
+统计特性 statistical characteristic<br>
+随机过程 random process<br>
+波形 waveform<br>
+功率 power<br>
+归一化 normalize<br>
+频谱 spectrum<br>
+功率谱密度 power spectral density<br>
+概率密度函数 probability denesity function<br>
+信噪比 signal-to-noise ratio        <br>
+正弦波 sinusoid                     <br>
+**热噪声 thermal noise**                <br>
+串联 series                        <br>
+**集总电阻 lumped resistance**           <br>
+分布栅电阻 distributed gate resistance<br>
+版图 layout                  <br>
+悬挂键 dangling bonds         <br>
+闪烁噪声 flicker noise         <br>
+输入参考噪声 input-referred noise<br>
+幅值 amplitude <br>
 
 
 ## CH8
-反馈 feedback
-前馈 feedforward
-反馈误差 feedback error
-开环 open-loop
-闭环 closed-loop
-虚地 virtual ground
-增益灵敏度降低 gain desensitization
-定量的 quantified
-电容分压器 capacitive voltage divider
-不同节点 distinct node
-同一节点 single node
-环路增益 loop gain
+反馈 feedback                     <br>
+前馈 feedforward                  <br>
+反馈误差 feedback error             <br>
+开环 open-loop                    <br>
+闭环 closed-loop                  <br>
+虚地 virtual ground               <br>
+增益灵敏度降低 gain desensitization    <br>
+定量的 quantified                  <br>
+电容分压器 capacitive voltage divider<br>
+不同节点 distinct node<br>
+同一节点 single node  <br>
+环路增益 loop gain    <br>
 
 
 
