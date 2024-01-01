@@ -477,9 +477,37 @@ monotonically
 劣质的共源共栅 poor man's cascode
 折叠式共源共栅 folded cascode
 
+## CH4
+差动对 differential pair
+共模电平 common-mode level
+峰峰值 peak-to-peak swing
+抗干扰 immunity
+差动相位 differential phases
+共模抑制 common-mode rejection
+单端电路 single-ended counterpart
+电源噪声抑制 supply noise rejection
+失真 clip
+平衡态 equilibrium
+半边电路 half-circuit
+阻性负反馈 resistive degeneration
+承担 substains
+并联 parallel
+失配 mismatch
+共模到差模转换 common-mode to differential conversion
+高频 high frequency
+寄生 parasitic
+共模抑制比 common-mode rejection ratio
+器件尺寸 device dimension
 
 
-
+## CH5
+电流镜 current mirrors
+基准，参考 reference
+精度 accuracy
+误差 inaccuracy
+阈值电压 threshold voltage
+有源的 active
+超过 exceed
 
 
 
